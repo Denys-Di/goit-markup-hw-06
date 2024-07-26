@@ -29,21 +29,36 @@ nav ul {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .header-nav {
     display: flex;
     align-items: center;
 }
 .nav-list {
-    display: flex;
+    display: none;
+    /* display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40px; */
 }
 .contacts-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
-    gap: 40px;
+    /* gap: 40px;  */
 }
+
+.burger-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.burger-icon {
+    display: block;
+    fill: #2f2f37;
+    cursor: pointer;
+}
+
 .feature {
     display: flex; 
     flex-wrap: wrap;
@@ -150,14 +165,17 @@ nav ul {
 
 .e-mail-form {
     display: flex;
-    gap: 24px;
+    /* gap: 24px;  */
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
 
 .e-input {
     border-radius: 4px;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     background-color: #2e2f42;
     padding: 8px 16px;
@@ -169,6 +187,9 @@ nav ul {
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
+
+    opacity: 0.3;
+    margin-bottom: 16px;
 }
 
 .footer-input-text {
@@ -178,12 +199,15 @@ nav ul {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .e-mail-input {
-    width: 453px;
-    height: 80px;
-    margin-left: 80px;
+    /* width: 453px; */
+    width: 288px;
+    /* height: 80px; */
+    height: 136px;
+    /* margin-left: 80px; */
 }
 
 
@@ -191,7 +215,7 @@ nav ul {
 .footer-button {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     border: none;  
     padding: 8px 16px;
     background: #4d5ae5;
@@ -217,12 +241,16 @@ nav ul {
 }
 
 .bloc_a {
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-min.jpg);
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-min-mobile.jpg);
     background-size: cover;
-    height: 600px;
-    max-width: 1440px;
+    /* height: 600px;
+    max-width: 1440px; */
+    height: 432px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -237,17 +265,19 @@ nav ul {
 
 }
 .bloc_c {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.12;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
+    max-width: 216px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -343,25 +373,37 @@ nav ul {
     color: #F4F4FD;
     letter-spacing: 0.02em;
     max-width: 264px;
+    /*  */
+    margin-bottom: 72px;
 }
+
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
 .footer-info {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 
 .logo_link {
-    display: inline-block;
+    /* display: inline-block; */
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
 .social_link {
     color: #434455;
     display: block;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
     color: #2e2f42;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -383,7 +425,7 @@ nav ul {
 .info {
     font-style: normal;
     letter-spacing: 0.02em;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 .social_link:hover,
 .social_link:focus {
@@ -406,8 +448,9 @@ nav ul {
     text-transform: uppercase;
 }
 .header-logo {
-    padding: 24px 0;
-    margin-right: 76px;
+    /* padding: 24px 0; */
+    padding: 16px 0;
+    /* margin-right: 76px; */
 }
 .logo_text {
     color: #2e2f42;
@@ -417,12 +460,12 @@ nav ul {
     font-weight: 700;
     color: #f4f4fd;
 }
-li .link {
+/* li .link {
     padding-top: 24px;
 }
 li .social_link {
     padding-top: 24px;
-}
+} */
 
 
 .container {
@@ -431,8 +474,9 @@ li .social_link {
    margin: 0 auto;
 }
 .container-footer {
-   display: flex;
-   align-items: baseline;
+   /* display: flex;
+   align-items: baseline; */
+   display: block;
 }
 
 
@@ -463,7 +507,8 @@ img {
     flex-wrap: wrap;
     align-items: center;
     /* gap: 48px 24px; */
-    gap: 48px;
+    gap: 48px 0;
+    
     
 }
 
@@ -504,6 +549,7 @@ img {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
      
 }
 
@@ -763,12 +809,98 @@ img {
     
 }
 
+/* Mobile-menu */
+
+/* .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+     opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
+} */
+
+/* .mobile-menu.is-open-mobile {
+     opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+} */
+
 /* --------------Media-------------- */
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .bloc_a {
+        background-image:
+        linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url('../images/people-office-1-min-mobile2x.jpg');
+    }
+
+}
+
 
 @media screen and (min-width: 768px) {
     .container {
         width: 736px;
         
+    }
+    .bloc_a {
+        padding: 112px 0;
+        height: 436px;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-min-tablet.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .bloc_a {
+            background-image:
+                linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/people-office-1-min-tablet2x.jpg');
+            }
+    
+    }
+    .title {
+        margin-bottom: 36px;
+        line-height: 1.07;
+        font-size: 56px;
+        max-width: 496px;
+    }
+    .burger-btn {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .social_link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+    .header-logo {
+        margin-right: 120px;
+        padding: 24px 0;
+    }
+    .mobile-menu {
+        display: none;
     }
         .feature-item {         
             width: calc((100% - 24px) / 2);
@@ -785,8 +917,43 @@ img {
             gap: 64px 24px;  
     }
         .team_card {
-            gap: 72px;  
-        }
+            gap: 72px 24px;  
+    }
+        .team_photo {
+            width: calc((100% - 24px) / 2);
+    }
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo_link {
+        display: inline-block;
+    }
+    .footer-icon {
+        display: block;
+        margin-left: 24px;
+    }
+    .e-mail-input {
+        width: 453px;
+        height: 80px;
+        margin-left: 108px;
+    }
+    .footer-input-text {
+        text-align: start;
+    }
+    .footer-info {
+        margin-left: 108px;
+    }
+    .e-input {
+        margin-bottom: 0;  
+        width: 264px;
+        margin-right: 24px;
+    }
+    .e-mail-form {
+        flex-wrap: nowrap;
+    }
+
+    
         
 }
 
@@ -795,13 +962,60 @@ img {
             width: 1158px;
             padding: 0 15px;
             margin: 0 auto;
-        }
+    }
+    .bloc_a {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        height: 600px;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-min-decstop.jpg);
+    }
+     @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+        .bloc_a {
+            background-image:
+                linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/people-office-1-min-decstop2x.jpg');
+             }
+    
+    }
+    .burger-btn {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-logo {
+        margin-right: 76px;
+    }
+    .contacts-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px; 
+    }
+    .social_link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .title {
+        margin-bottom: 48px;
+    }
+    .mobile-menu {
+        display: none;
+    }
     .feature {
         gap: 24px;
-        }
+    }
     .feature-item {
         width: calc((100% - 72px) / 4);
-        }
+    }
     .feature-icon-container {
         display: flex;
         align-items: center;
@@ -820,9 +1034,39 @@ img {
             letter-spacing: 0.02em;
             color: #2e2f42;
             margin-bottom: 8px;
-        }
+    }
     .bloc_b {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    .team_card {
+            gap: 48px 24px;
+    }
+    .team_photo {
+            width: calc((100% - 48px) / 3);
+    }
+    .card_content {
+        padding: 120px 0;
+    }
+    .bloc_c {
+        padding: 120px 0;
+    }
+    .container-footer {
+        flex-wrap: nowrap;
+    }
+    .footer-info {
+        margin-left: 0;
+        margin-right: 120px;
+    }
+    .e-mail-input {
+        margin-left: 80px;
+    }
+    .e-input {
+        opacity: 1;
+    }
+    .footer-icon {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
 }

@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/style.css">
-	<title>HomeWork-5</title>
+	<title>HomeWork-6</title>
 </head>
 <body>
-	<!-- <header class="page-header">
+	<header class="page-header">
 		<div class="container header-container">
 			<nav class="header-nav">
 				<a href="./index.html" class="logo header-logo">
@@ -33,11 +33,32 @@
 					</li>
 				</ul>			
 			</address>
+			<button class="burger-btn" type="button">
+				<svg class="burger-icon" width="24" height="24">
+					<use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
+				</svg>
+			</button>
 		</div>
-	</header> -->
+		<div class="mobile-menu is-open-mobile">
+			<div class="container mobile-menu-container">
+				<button class="mobile-menu-close" type="button">
+					<nav></nav>
+					<address></address>	
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>				
+				</button>
+			</div>
+		</div>
+	</header>  
 
 	<main>
+		
 		<!--Section 1-->
+
 			<section class="bloc_a">
 				<div class="container">
 				    <h1 class="title">
@@ -49,6 +70,7 @@
 			</section>
 		
 		<!--Section 2-->
+
 		<section class="bloc_b">
 			<div class="container">
 				<h2 class="title_b visually-hidden">Benefits</h2>
@@ -117,8 +139,13 @@
 					Our Team
 				</h2>
 				<ul class="project_card">
-					<li class="project_photo">
-						<img src="./images/img-3.jpg" alt="photo Mark Guerrero" width="264" height="260">
+					<li class="project_photo">					
+							<img 
+							srcset="./images/img-3-1.jpg, ./images/img-3.jpg 2x"
+							src="./images/img-3.jpg" 
+							alt="photo Mark Guerrero"
+							 width="264" height="260">						
+						
 						<div class="photo_text">
 							<h3 class="title_c">Mark Guerrero</h3>
 							<p class="title_text">Product Designer</p>
@@ -155,7 +182,11 @@
 						</div>						
 					</li>
 					<li class="project_photo">
-						<img src="./images/img-2.jpg" alt="photo Tom Ford" width="264" height="260">
+						<img 
+						srcset="./images/img-2-1.jpg, ./images/img-2.jpg 2x"
+						src="./images/img-2.jpg"
+						 alt="photo Tom Ford" 
+						 width="264" height="260">
 						<div class="photo_text">
 							<h3 class="title_c">Tom Ford</h3>
 							<p class="title_text">Frontend Developer</p>
@@ -192,7 +223,11 @@
 						</div>						
 					</li>
 					<li class="project_photo">
-						<img src="./images/img-1.jpg" alt="photo Camila Garcia" width="264" height="260">
+						<img 
+						srcset="./images/img-1-1.jpg, ./images/img-1.jpg 2x"
+						src="./images/img-1.jpg"
+						 alt="photo Camila Garcia" 
+						 width="264" height="260">
 						<div class="photo_text">
 							<h3 class="title_c">Camila Garcia</h3>
 							<p class="title_text">Marketing</p>
@@ -229,7 +264,11 @@
 						</div>					
 					</li>
 					<li class="project_photo">
-						<img src="./images/img.jpg" alt="photo Daniel Wilson" width="264" height="260">
+						<img 
+						srcset="./images/img1.jpg, ./images/img.jpg 2x"
+						src="./images/img.jpg" 
+						alt="photo Daniel Wilson" 
+						width="264" height="260">
 						<div class="photo_text">
 							<h3 class="title_c">Daniel Wilson</h3>
 							<p class="title_text">UI Designer</p>
@@ -278,7 +317,14 @@
 				<ul class="team_card">
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-9.jpg" alt="banking app" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-9-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-9.jpg" />
+							    <img 
+							    src="./images/img-9.jpg" 
+							    alt="banking app" 
+							    width="360" height="300">						
+							</picture>
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -292,7 +338,15 @@
 					</li>
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-8.jpg" alt="cashless payment" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-8-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-8.jpg" />
+								<img 
+							    src="./images/img-8.jpg"
+							    alt="cashless payment" 
+							    width="360" height="300">
+						   </picture>
+							
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -306,7 +360,14 @@
 					</li>
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-7.jpg" alt="Meditation App" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-7-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-7.jpg" />
+							    <img 
+							    src="./images/img-7.jpg" 
+							    alt="Meditation App" 
+							    width="360" height="300">
+						    </picture>							
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -320,7 +381,15 @@
 					</li>
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-6.jpg" alt="Taxi Service" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-6-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-6.jpg" />
+								<img 
+							    src="./images/img-6.jpg" 
+							    alt="Taxi Service" 
+							    width="360" height="300">
+						    </picture>
+							
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -334,7 +403,15 @@
 					</li>
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-5.jpg" alt="Screen Illustrations" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-5-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-5.jpg" />
+								<img 
+							    src="./images/img-5.jpg"
+							    alt="Screen Illustrations" 
+							    width="360" height="300">
+						</picture>
+							
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -348,7 +425,15 @@
 					</li>
 					<li class="team_photo">
 						<div class="team_photo-container">
-							<img src="./images/img-4.jpg" alt="Online Courses" width="360" height="300">
+							<picture>
+								<source media="(max-width: 799px)" srcset="./images/img-4-1.jpg" />
+								<source media="(min-width: 800px)" srcset="./images/img-4.jpg" />
+								<img 
+							    src="./images/img-4.jpg" 
+							    alt="Online Courses"
+							    width="360" height="300">
+							</picture>
+							
 							<p class="team_photo-text">
 								14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
 								App ·
@@ -368,7 +453,7 @@
 
 
 
-	<!-- <footer class="floor">
+	<footer class="floor">
 		<div class="container container-footer">
 			<div class="footer-info">
 				<a href="./index.html" class="logo logo_link">
@@ -432,7 +517,7 @@
 			</form>
 		</div>
 	</div>
-	</footer> -->
+	</footer>
 	<div class="backdrop" data-modal>
 		<div class="modal">
 			<button class="modal-button" type="button" data-modal-close>
