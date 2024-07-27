@@ -576,19 +576,18 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     transform: translate( -50%, -50% );
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     
     
     
 }
-
 
 .modal-button {
     display: flex;
@@ -753,6 +752,9 @@ img {
 
 
 .modal-label {
+    display: flex;
+    align-items: center;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -767,6 +769,8 @@ img {
 }
 
 .cub { 
+
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -811,7 +815,7 @@ img {
 
 /* Mobile-menu */
 
-/* .mobile-menu {
+.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -822,14 +826,90 @@ img {
      opacity: 0;
     visibility: hidden;
     pointer-events: none; 
-} */
 
-/* .mobile-menu.is-open-mobile {
-     opacity: 1;
+    padding: 24px 16px 40px 16px;
+} 
+
+.mobile-menu-container {
+    position: relative;
+}
+
+.mobile-menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e7e9fc;
+}
+.mobile-icon-close {
+    fill: #2e2f42;
+}
+
+.mobile-menu.is-open-mobile {
+    opacity: 1;
     visibility: visible;
     pointer-events: auto; 
-} */
+} 
 
+.mobile-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 168px;
+    padding-top: 48px;
+}
+
+.mobile-navigation-menu {
+    
+}
+
+.mobile-navigation-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mobile-address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 48px;
+    font-style: normal;
+}
+
+.mobile-navigation-address {
+
+}
+
+.mobile-address-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.icon-list-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+.nav-color {
+    color: #404bbf;
+}
+.address-color {
+    color: #4d5ae5;
+}
 /* --------------Media-------------- */
 
 
@@ -951,6 +1031,11 @@ img {
     }
     .e-mail-form {
         flex-wrap: nowrap;
+    }
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
     }
 
     

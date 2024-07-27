@@ -11,7 +11,7 @@
 	<title>HomeWork-6</title>
 </head>
 <body>
-	<header class="page-header">
+	<header class="page-header" >
 		<div class="container header-container">
 			<nav class="header-nav">
 				<a href="./index.html" class="logo header-logo">
@@ -19,8 +19,8 @@
 				</a>
 				<ul class="nav-list">
 					<li><a href="./index.html" class="link current">Studio</a></li>
-					<li><a href="" class="link">Portfolio</a></li>
-					<li><a href="" class="link">Contacts</a></li>
+					<li><a href="#" class="link">Portfolio</a></li>
+					<li><a href="#" class="link">Contacts</a></li>
 				</ul>
 			</nav>
 			<address class="info">
@@ -33,24 +33,73 @@
 					</li>
 				</ul>			
 			</address>
-			<button class="burger-btn" type="button">
+			<button class="burger-btn" type="button" data-modal-open>
 				<svg class="burger-icon" width="24" height="24">
 					<use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
 				</svg>
 			</button>
 		</div>
-		<div class="mobile-menu is-open-mobile">
+		<div class="mobile-menu " data-modal>
 			<div class="container mobile-menu-container">
-				<button class="mobile-menu-close" type="button">
-					<nav></nav>
-					<address></address>	
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>				
-				</button>
+				<button class="mobile-menu-close" type="button" data-modal-close>
+					<svg class="mobile-icon-close" width="8" height="8">
+						<use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+					</svg>
+				</button>	
+				<nav>
+					<ul class="mobile-navigation">
+						<li class="mobile-navigation-menu">
+							<a class="mobile-navigation-link nav-color" href="#">Studio</a> 
+						</li>
+						<li class="mobile-navigation-menu">
+							<a class="mobile-navigation-link" href="#">Portfolio</a>
+						</li>
+						<li class="mobile-navigation-menu">
+							<a class="mobile-navigation-link" href="#">Contacts</a> 
+						</li>
+					</ul>
+				</nav>
+				<address>
+					<ul class="mobile-address">
+						<li class="mobile-navigation-address">
+							<a class="mobile-address-link address-color" href="tel:+110001111111">+11 (000) 111-11-11</a> 
+						</li>
+						<li class="mobile-navigation-address">
+							<a class="mobile-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a> 
+						</li>
+					</ul>
+				</address>	
+				<ul class="icon-list icon-list-mobile">
+					<li class="icon-item">
+						<a href="" class="icon-link">
+							<svg class="icon-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-instagram-2"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="icon-item">
+						<a href="" class="icon-link">
+							<svg class="icon-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-twitter-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="icon-item">
+						<a href="" class="icon-link">
+							<svg class="icon-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-facebook-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="icon-item">
+						<a href="" class="icon-link">
+							<svg class="icon-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-linkedin-1"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				
 			</div>
 		</div>
 	</header>  
@@ -581,8 +630,11 @@
 									<use href="./images/icons.svg#icon-Vector"></use>
 								</svg>
 							</span>
-							I accept the terms and conditions of the
-							<a href="#" class="modal-link">Privacy Policy</a>
+							<span>
+								I accept the terms and conditions of the
+								<a href="#" class="modal-link">Privacy Policy</a>
+							</span>
+							
 						</label>
 					</div>					
 					<button class="button-send" type="submit">Send</button>				
