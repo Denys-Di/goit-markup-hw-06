@@ -472,7 +472,7 @@ li .social_link {
 
 
 .container {
-   max-width: 320px;
+   width: 320px;
    padding: 0 15px;
    margin: 0 auto;
 }
